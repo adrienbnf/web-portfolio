@@ -1,0 +1,19 @@
+@import "./theme.scss";
+
+.top-bar-container {
+    position: sticky;
+    min-height: 75px;
+    height: 75px;
+    top: 0px;
+    background-color: $top-bar-background;
+    border-bottom: solid 4px $primary-color;
+    border-radius: 5px;
+};
+
+.tabs-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+};
+

@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { WelcomePage } from './WelcomePage';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { darkTheme } from '../constants/theme';
+import { TabsRoutes } from './TabsRoutes';
 
 const App: FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: FC = () => {
       <div className="App">
         <Routes>
           <Route path={"/"} Component={WelcomePage}/>
+          <Route path={"/*"} Component={TabsRoutes}/>
         </Routes>
       </div>
     </ThemeProvider>

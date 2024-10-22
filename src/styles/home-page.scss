@@ -1,0 +1,38 @@
+@import "./theme.scss";
+
+.home-page-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+};
+
+.home-main-title {
+    width: fit-content;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 2%;
+};
+
+.website-description {
+    width: 15%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+    border-color: $secondary-color;
+    background-color: $container-background;
+    transition-duration: 0.3s;
+}
+
+.website-description-hover {
+    scale: 1.15;
+    width: 15%;
+    text-align: center;
+    padding: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: $secondary-color;
+    background-color: $container-background;
+    transition-duration: 0.3s;
+}

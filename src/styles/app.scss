@@ -1,0 +1,21 @@
+@use "./welcome-page.scss";
+@use "./home-page.scss";
+@use "./top-bar.scss";
+
+@font-face {
+    font-family: "rubik";
+    src: url("./fonts/rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+html,
+body,
+#root,
+.App {
+    font-family: "rubik";
+    height: 100%;
+    margin: 0;
+};
+
+.all-pages-container {
+    height: 100%;
+};

@@ -14,25 +14,34 @@
     margin: 2%;
 };
 
-.website-description {
-    width: 15%;
+.website-description-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 75%;
+};
+
+.website-description-element {
+    width: 40%;
     text-align: center;
-    padding: 4px;
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 10px;
-    border-color: $secondary-color;
+    border-color: $container-border;
     background-color: $container-background;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
 }
 
-.website-description:hover {
-    scale: 1.15;
-    width: 15%;
-    text-align: center;
-    padding: 6px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
+.website-description-element:hover {
+    scale: 1.05;
+    border-width: 2px;
     border-color: $secondary-color;
-    background-color: $container-background;
-    transition-duration: 0.3s;
+    transition: 0.3s, border-width 0s;
 }
+
+.website-description-subtitle {
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-size: x-large;
+};

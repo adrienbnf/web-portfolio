@@ -1,6 +1,6 @@
 {
-  "name": "web-portofolio",
-  "homepage": "https://adrienbnf.github.io/web-portofolio/",
+  "name": "web-portfolio",
+  "homepage": "https://adrienbnf.github.io/web-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

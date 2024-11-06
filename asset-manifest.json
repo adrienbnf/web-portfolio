@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/web-portofolio/static/css/main.e94a669a.css",
-    "main.js": "/web-portofolio/static/js/main.703d35c7.js",
-    "static/media/Rubik-VariableFont_wght.ttf": "/web-portofolio/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
-    "index.html": "/web-portofolio/index.html",
-    "main.e94a669a.css.map": "/web-portofolio/static/css/main.e94a669a.css.map",
-    "main.703d35c7.js.map": "/web-portofolio/static/js/main.703d35c7.js.map"
+    "main.css": "/web-portfolio/static/css/main.98eae9cc.css",
+    "main.js": "/web-portfolio/static/js/main.61de5728.js",
+    "static/media/Rubik-VariableFont_wght.ttf": "/web-portfolio/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
+    "index.html": "/web-portfolio/index.html",
+    "main.98eae9cc.css.map": "/web-portfolio/static/css/main.98eae9cc.css.map",
+    "main.61de5728.js.map": "/web-portfolio/static/js/main.61de5728.js.map"
   },
   "entrypoints": [
-    "static/css/main.e94a669a.css",
-    "static/js/main.703d35c7.js"
+    "static/css/main.98eae9cc.css",
+    "static/js/main.61de5728.js"
   ]
 }

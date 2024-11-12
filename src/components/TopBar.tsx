@@ -7,11 +7,11 @@ type TopBarProps = {
 
 export const TopBar: FC<TopBarProps> = ({ tabs }) => {
     return (
-        <div className="top-bar-container">
-            <div className="tabs-container">
-                {tabs.map((tab) => {
+        <div className={"sticky top-0 h-[75px] bg-black border-solid border-b-primary border-b-4"}>
+            <div className={"flex h-full items-center justify-center gap-8"}>
+                {tabs.map((tab, index) => {
                     return (
-                        <Tab tab={tab}/>
+                        <Tab key={index} tab={tab}/>
                     )
                 })}
             </div>

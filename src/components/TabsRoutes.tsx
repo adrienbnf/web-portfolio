@@ -5,7 +5,7 @@ import { TopBar } from "./TopBar";
 
 export const TabsRoutes: FC = () => {
     return (
-        <div className="all-pages-container">
+        <div className="h-full">
             <TopBar 
                 tabs={[
                     {

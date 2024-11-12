@@ -1,29 +1,43 @@
-import { FC, useState } from "react";
+import { FC } from "react";
+import { Widget } from "./Widget";
 
 export const HomePage: FC = () => {
     return (
-        <div className="home-page-container">
-            <h2 className="home-main-title">Welcome to my portfolio!</h2>
-            <div className={"website-description-container"}>
-                <div
-                    className={"website-description-element"}
-                >
-                    <h4 className={"website-description-subtitle"}>Who am I ?</h4>
-                    <p>
-                        My name is Adrien, I&apos;m currently a second-year Master&apos;s student in computer science
-                        at the Epitech school campus located in Toulouse &#40;France&#41;.
-                    </p>
+        <div className={"h-full flex flex-col items-center gap-5"}>
+            <h2 className={"text-5xl m-7"}>Welcome to my portfolio!</h2>
+            <div className={"flex justify-center items-center h-1/4 gap-x-[2vw]"}>
+                <div className="flex-1 h-full">
+                    <Widget
+                        baseHeight={"100%"}
+                        title={"Who am I ?"}
+                        content={
+                            `My name is Adrien, I'm currently a second-year Master's
+                            student in computer science at the Epitech school campus located in
+                            Toulouse (France).`
+                        }
+                    />
                 </div>
-                <div
-                    className={"website-description-element"}
-                >
-                    <h4 className={"website-description-subtitle"}>What about this website ?</h4>
-                    <p>
-                        This website is my portfolio, it contains some of my school/personal projects
-                        and my accounts on different learning plateforms so you can take a look at my progress.<br/><br/>
+                <div className="flex-1 h-full">
+                    <Widget
+                        baseHeight={"100%"}
+                        title={"Who am I ?"}
+                        content={
+                            `This website is my portfolio, it contains some of my school/personal projects
+                            and my accounts on different learning plateforms so you can take a look at my progress.\n\n
 
-                        It&apos;s a way for me to show what I&apos;m capable of as a future IT engineer.
-                    </p>
+                            It's a way for me to show what I'm capable of as a future IT engineer.`
+                        }
+                    />
+                </div>
+                <div className="flex-1 h-full">
+                    <Widget
+                        baseHeight={"100%"}
+                        title={"My accounts on different plateforms:"}
+                        content={
+                            <>
+                            </>
+                        }
+                    />
                 </div>
             </div>
         </div>

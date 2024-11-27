@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.98eae9cc.css",
-    "main.js": "/web-portfolio/static/js/main.61de5728.js",
+    "main.css": "/web-portfolio/static/css/main.28a29e2a.css",
+    "main.js": "/web-portfolio/static/js/main.fbd90873.js",
     "static/media/Rubik-VariableFont_wght.ttf": "/web-portfolio/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
     "index.html": "/web-portfolio/index.html",
-    "main.98eae9cc.css.map": "/web-portfolio/static/css/main.98eae9cc.css.map",
-    "main.61de5728.js.map": "/web-portfolio/static/js/main.61de5728.js.map"
+    "main.28a29e2a.css.map": "/web-portfolio/static/css/main.28a29e2a.css.map",
+    "main.fbd90873.js.map": "/web-portfolio/static/js/main.fbd90873.js.map"
   },
   "entrypoints": [
-    "static/css/main.98eae9cc.css",
-    "static/js/main.61de5728.js"
+    "static/css/main.28a29e2a.css",
+    "static/js/main.fbd90873.js"
   ]
 }

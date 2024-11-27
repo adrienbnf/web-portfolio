@@ -10,7 +10,7 @@ const App: FC = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline/>
-      <div className="App">
+      <div className={"App"}>
         <Routes>
           <Route path={"/"} Component={WelcomePage}/>
           <Route path={"/*"} Component={TabsRoutes}/>

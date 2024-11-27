@@ -6,9 +6,8 @@ export const WelcomePage: FC = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="welcome-page-container">
+        <div className="flex justify-center items-center h-full">
             <Button
-                className={"welcome-button"}
                 variant="contained"
                 onClick={() => {navigate("/home")}}
             >

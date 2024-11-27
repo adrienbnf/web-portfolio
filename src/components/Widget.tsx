@@ -1,62 +1,51 @@
 import { FC, ReactNode, useEffect, useState } from "react";
+import { SUBTITLE_ADAPTATIVE_FONTSIZE, TEXT_ADAPTATIVE_FONTSIZE } from "../constants/font ";
 
 type Props = {
-    title: string;
-    content: string | ReactNode;
-    baseWidth?: string;
     baseHeight?: string;
-    hoverHeight?: string;
+    content: string | ReactNode;
+    height?: string;
     hoverWidth?: string;
+    title?: string;
+    width?: string;
+    tailwindStyle?: string;
 }
 
 export const Widget: FC<Props> = ({
     title,
     content,
-    baseWidth="auto",
-    baseHeight="auto",
-    hoverWidth=baseWidth,
-    hoverHeight=baseHeight,
+    width="auto",
+    height="auto",
+    tailwindStyle,
 }) => {
-    const [isHover, setIsHover] = useState<boolean>(false);
-    const [width, setWidth] = useState<string>(baseWidth);
-    const [height, setHeight] = useState<string>(baseHeight);
 
-    useEffect(() => {
-        if (isHover) {
-            setWidth(hoverWidth);
-            setHeight(hoverHeight);
-        }
-        else {
-            setWidth(baseWidth);
-            setHeight(baseHeight);
-        }
-    }, [isHover, setHeight, setWidth])
     return (
         <div
             style={{
                 width: width,
                 height: height,
             }}
-            className={
-                `border border-solid border-borderColor bg-containerBg rounded-lg p-2
-                 hover:border-secondary hover:border-2 text-center
-                 custom-widget-transition`
+            className={tailwindStyle ?? `
+                    border border-solid border-borderColor bg-containerBg rounded-lg p-3
+                    hover:border-secondary hover:border-2 text-center
+                    custom-widget-transition hover:scale-105
+                `
             }
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
         >
-            <h4 
-                style={{
-                    fontSize: "clamp(0.75em, calc(1.2vw + 0.4vh), 1.6em)",
-                }}
-                className={"mt-0"}
-            > 
-                {title}
-            </h4>
+            {title ? (
+                <h4 
+                    style={{
+                        fontSize: SUBTITLE_ADAPTATIVE_FONTSIZE,
+                    }}
+                    className={"mt-0"}
+                > 
+                    {title}
+                </h4>
+            ) : null}
             {typeof content === "string" ? (
                 <p
                     style={{
-                        fontSize: "clamp(0.6em, calc(0.8vw + 0.3vh), 1.4em)",
+                        fontSize: TEXT_ADAPTATIVE_FONTSIZE,
                     }}
                 >
                     {content}
